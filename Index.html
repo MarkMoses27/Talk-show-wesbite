@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to Vybzero Talk, hosted by Justus Otieno."
+    />
+    <meta
+      name="keywords"
+      content="Vybzero Talk, talk show, Justus Otieno, guests"
+    />
+    <meta name="author" content="talk show" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,700;0,900;1,500;1,600;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Vybzero Talk | Home</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-wrapper">
+        <img src="images/logo.jpg" class="logo" alt="Vybzero Talk logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Talk Show</a></li>
+          <li><a href="#shop">Shop </a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="container1">
+          <h1>Welcome to Vybzero Talk</h1>
+          <p>
+            Vybzero Talk is a talk show hosted by Justus Otieno. Tune in for
+            lively discussions, expert guests, and a fresh perspective on
+            current events and popular culture.
+          </p>
+          <button class="btn">View Show Schedule</button>
+        </div>
+      </section>
+      <section id="shop" class="shop">
+        <div class="container">
+          <h2>Shop</h2>
+          <div class="products-grid">
+            <div class="product">
+              <img src="images/hood.jpg" alt="Hoodie" />
+              <h3>Hoodie</h3>
+              <p>KES 2500.00</p>
+              <button class="add-to-cart-button">Add to Cart</button>
+            </div>
+            <div class="product">
+              <img src="images/cap.jpg" alt="Cap" />
+              <h3>Cap</h3>
+              <p>KES 300.00</p>
+              <button class="add-to-cart-button">Add to Cart</button>
+            </div>
+            <div class="product">
+              <img src="images/t-shirt.jpg" alt="T-shirt" />
+              <h3>T-shirt</h3>
+              <p>KES 800.00</p>
+              <button class="add-to-cart-button">Add to Cart</button>
+            </div>
+            <div class="product">
+              <img src="images/mug.jpg" alt="Mug" />
+              <h3>Mug</h3>
+              <p>KES80.00</p>
+              <button class="add-to-cart-button">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="container">
+          <h2>About</h2>
+          <p>
+            Justus Otieno is a renowned TV personality and host of Vybzero Talk.
+            With a career spanning over a decade, Justus has interviewed some of
+            the world's most influential figures and has become known for his
+            engaging and thought-provoking conversations. Vybzero Talk is his
+            latest venture, offering viewers a fresh perspective on current
+            events and popular culture.
+          </p>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="container">
+          <h2>Contact</h2>
+          <p>
+            Have a question or comment? Send us a message using the form below.
+          </p>
+          <form action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" class="btn">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-item">
+            <h3>Vybzero Talk</h3>
+            <p>
+              Tune in for lively discussions, expert guests, and a fresh
+              perspective on current events and popular culture.
+            </p>
+          </div>
+          <div class="footer-item">
+            <h3>Follow Us</h3>
+            <div class="social-media-icons">
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+              <a href="#"><i class="fab fa-twitter-square"></i></a>
+              <a href="#"><i class="fab fa-instagram-square"></i></a>
+            </div>
+          </div>
+          <div class="footer-item">
+            <h3>Subscribe</h3>
+            <form action="#" method="POST">
+              <input type="email" id="email" name="email" placeholder="Email" />
+              <button type="submit" class="btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
