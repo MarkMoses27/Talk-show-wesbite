@@ -1,9 +1,24 @@
-const searchButton = document.getElementById("search-button");
-const searchInput = document.getElementById("search-input");
+const contactForm = document.getElementById('contact-form');
+contactForm.addEventListener('submit', function (event) {
+  event.preventDefault(); // prevent form from submitting normally
 
-searchButton.addEventListener("click", function () {
-  const searchTerm = searchInput.value;
-  // Perform search operation with searchTerm
-  // For example, redirect to a search results page:
-  window.location.href = "/search?q=" + encodeURIComponent(searchTerm);
+  // send form data to server using AJAX
+  const formData = new FormData(contactForm);
+  fetch(contactForm.action, {
+    method: contactForm.method,
+    body: formData,
+  })
+    .then((response) => response.text())
+    .then((data) => {
+      // display confirmation message
+      const confirmation = document.createElement('p');
+      confirmation.textContent = 'Thank you for your message!';
+      contactForm.parentNode.insertBefore(confirmation, contactForm.nextSibling);
+
+      // reset form fields
+      contactForm.reset();
+    })
+    .catch((error) => {
+      console.error(error);
+    });
 });
